@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Флибуста (OPDS)</ShortName>
-  <Description>Поиск книг в библиотеке Флибуста через OPDS</Description>
+  <ShortName>Flibusta (OPDS)</ShortName>
+  <Description>Search for books in Flibusta library via OPDS</Description>
   <Tags>books, opds, flibusta</Tags>
   <Contact>admin@flibusta.site</Contact>
-
-  <!-- Основной поиск по книгам -->
-  <Url type="application/atom+xml"
-       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=books&amp;pageNumber={startPage?}&amp;sort=relevance"/>
-
-  <!-- Поиск по авторам -->
-  <Url type="application/atom+xml"
-       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=authors"/>
-
-  <!-- Поиск по сериям -->
-  <Url type="application/atom+xml"
-       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=series"/>
-
-  <!-- Альтернативный шаблон с пагинацией (для Calibre) -->
   <Url type="application/atom+xml"
        template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=books&amp;start={startIndex?}&amp;maxResults={count?}"/>
-
   <SearchForm>https://flibusta.site/booksearch</SearchForm>
   <LongName>Flibusta: Search for books in OPDS format</LongName>
   <Image width="16" height="16">https://flibusta.site/favicon.ico</Image>
