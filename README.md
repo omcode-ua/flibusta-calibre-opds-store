@@ -20,3 +20,6 @@ Calibre ver 8.4
 
 Enjoy your reading!
 
+---
+
+☕ **Support the developer:** [Buy me a coffee](https://coff.ee/omcode)
