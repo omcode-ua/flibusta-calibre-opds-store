@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-   <ShortName>Флибуста</ShortName>
-   <Description>Книжное братство</Description>
-   <Tags></Tags>
-   <Contact></Contact>
-   <Url type="application/atom+xml"
-        indexOffset="0" pageOffset="0"
-        template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=books&amp;pageNumber={startPage?}"/>
-   <SearchForm>https://flibusta.site/booksearch</SearchForm>
-   <LongName>Флибуста</LongName>
-   <Image width="16" height="16">https://flibusta.site/sites/default/files/bluebreeze_favicon.ico</Image>
-   <Developer></Developer>
-   <Attribution></Attribution>
-   <SyndicationRight>open</SyndicationRight>
-   <AdultContent>false</AdultContent>
-   <Language>*</Language>
-   <OutputEncoding>UTF-8</OutputEncoding>
-   <InputEncoding>UTF-8</InputEncoding>
- </OpenSearchDescription>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Флибуста (OPDS)</ShortName>
+  <Description>Поиск книг в библиотеке Флибуста через OPDS</Description>
+  <Tags>books, opds, flibusta</Tags>
+  <Contact>admin@flibusta.site</Contact>
+
+  <!-- Основной поиск по книгам -->
+  <Url type="application/atom+xml"
+       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=books&amp;pageNumber={startPage?}&amp;sort=relevance"/>
+
+  <!-- Поиск по авторам -->
+  <Url type="application/atom+xml"
+       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=authors"/>
+
+  <!-- Поиск по сериям -->
+  <Url type="application/atom+xml"
+       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=series"/>
+
+  <!-- Альтернативный шаблон с пагинацией (для Calibre) -->
+  <Url type="application/atom+xml"
+       template="https://flibusta.site/opds/search?searchTerm={searchTerms}&amp;searchType=books&amp;start={startIndex?}&amp;maxResults={count?}"/>
+
+  <SearchForm>https://flibusta.site/booksearch</SearchForm>
+  <LongName>Flibusta: Search for books in OPDS format</LongName>
+  <Image width="16" height="16">https://flibusta.site/favicon.ico</Image>
+  <Developer>Flibusta Team</Developer>
+  <Attribution>Data provided by Flibusta.site</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <Language>ru</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>
