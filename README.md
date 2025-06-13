@@ -5,7 +5,7 @@ A Calibre plugin that allows downloading books from flibusta.is.
 Calibre ver 8.4
 
 ## Installation
-1. Download flibusta-calibre-opds-store-0.0.1.zip from the [releases](https://github.com/omcode-ua/flibusta-calibre-opds-store/releases).
+1. Download Flibusta.Plugin.V1.8.4.0.zip from the [releases](https://github.com/omcode-ua/flibusta-calibre-opds-store/releases).
 2. Launch Calibre.
 3. Press Ctrl+P, go to Plugins, then Load plugin from file.
 4. Select the downloaded file, click "Yes", then "OK".
